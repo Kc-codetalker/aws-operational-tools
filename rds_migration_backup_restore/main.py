@@ -8,8 +8,8 @@ This script is used to create and shared encrypted RDS snapshot from db instance
 To use this script simply run
 `python shared_encrypted_rds_snapshot.py db_snapshot_identifier kms_key_id account_id`
 where: 
-- db_instance_id is the RDS db instance identifer that need to be snapshot.
-- kms_key_id, arn of kms_key_id that used to copy and reencrypt the snapshot.
+- db_instance_id is the source RDS db instance identifer that need to be snapshot.
+- kms_key_id, the target account's arn of kms_key_id that used to copy and reencrypt the snapshot.
 - account id is the target account id to share the snapshot.
 
 example:

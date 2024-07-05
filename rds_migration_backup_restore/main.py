@@ -1,7 +1,7 @@
 import boto3
 from sys import argv
 import time
-client = boto3.client('rds')
+client = boto3.client('rds', region_name='ap-southeast-1')
 
 """
 This script is used to create and shared encrypted RDS snapshot from db instance to other AWS account.
